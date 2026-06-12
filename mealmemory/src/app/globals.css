@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #fbf9f8;
+  --foreground: #1b1c1c;
+  --card: #ffffff;
+  --card-foreground: #1b1c1c;
+  --popover: #ffffff;
+  --popover-foreground: #1b1c1c;
+  --primary: #3d6751;
+  --primary-foreground: #ffffff;
+  --secondary: #db313f;
+  --secondary-foreground: #ffffff;
+  --muted: #f0eded;
+  --muted-foreground: #717973;
+  --accent: #bfedd1;
+  --accent-foreground: #254f3a;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  --border: #e4e2e1;
+  --input: #e4e2e1;
+  --ring: #3d6751;
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-heading: "Quicksand", "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(191, 237, 209, 0.46),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 218, 216, 0.42),
+      transparent 32rem
+    ),
+    var(--background);
+  color: var(--foreground);
+  font-family: "Plus Jakarta Sans", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.font-heading {
+  font-family: "Quicksand", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+a,
+button {
+  text-underline-offset: 4px;
+}
